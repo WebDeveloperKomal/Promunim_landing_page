@@ -1,0 +1,1493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.hero{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  background: green;
+}
+.logo img{
+  margin-right: 1079px;
+  margin-top: 20px;
+  width: 124px; /* Set the width */
+  height: auto; /* Maintain aspect ratio */
+  position: relative;
+
+}
+@media (max-width: 768px) {
+  .logo img {
+      margin-right: 20px; /* Adjust margin for smaller screens */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+      width: 80px; /* Adjust width for smaller screens */
+  }
+}
+
+.icons{
+  margin-top: -218px;
+  margin-left: 931px;
+  position: relative;
+}
+.icons a {
+  background: #ecf0f3;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin-top: 50px;
+  margin-right: 10px; /* Adjusted margin-right */
+  display: inline-flex;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: all 0.3s;
+  box-shadow: -3px -3px 7px #ffffff,
+              3px 3px 5px #030303;
+}
+
+.icons a:hover:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  background: #ecf0f3;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+
+.icons a i {
+  position: relative;
+  z-index: 3;
+  width: 30%;
+  margin-left: 10px;
+  height: 30%;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.icons a:hover i {
+  transform: scale(0.9);
+}
+
+.icons a.fb i {
+  color: #4267B2;
+}
+
+.icons a.twitter i {
+  color: #1DA1F2;
+}
+
+.icons a.insta i {
+  color: #E1306C;
+}
+
+.icons a.git i {
+  color: #333;
+}
+
+.icons a.yt i {
+  color: #ff0000;
+}
+
+
+.arrow img{
+  margin-left: 740px;
+  margin-top: 50px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .arrow img {
+      margin-left: 20px; /* Adjust margin for smaller screens */
+      margin-top: 20px; /* Adjust margin for smaller screens */
+  }
+}
+/* Base styles for the button */
+/* Button styles */
+.btn button {
+  padding: 19px 34px;
+  border: none;
+  background-color: #fff; /* Button background color */
+  color: #000; /* Text color */
+  cursor: pointer; /* Cursor style */
+  margin-top: -1px;
+  margin-left: 797px;
+  border-radius: 5px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .btn button {
+    padding: 10px 20px; /* Further adjusted padding for smaller screens */
+    margin-left: 20px; /* Adjusted margin for smaller screens */
+  }
+}
+
+
+/* Hover effect */
+.btn button:hover {
+  background-color: transparent; /* New background color on hover */
+  border-color: #fff; /* New border color on hover */
+}
+.btn p{
+  margin-top: 20px;
+  margin-left: 787px;
+  font-size: 12px;
+  color: #ceced1;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .btn p {
+    margin-left: 30%; /* Adjust as needed for even smaller screens */
+    margin-top: 5px; /* Adjust as needed for even smaller screens */
+    font-size: 8px; /* Adjust font size for even smaller screens */
+  }
+}
+
+.text h1{
+  margin-right: 734px;
+  margin-top: -152px;
+  font-size: 48px;
+  color: #fff;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .text h1 {
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+    margin-top: -50px; /* Adjusted margin for smaller screens */
+    font-size: 32px; /* Adjusted font size for smaller screens */
+  }
+}
+
+.horizontal-line-text{
+  height: 1px;
+  background-color: #fff;
+  margin: 20px auto;
+  border: none;
+  margin-left: 3px;
+  width: 90px;
+  text-align: center;
+  position: relative;
+
+}
+@media (max-width: 768px) {
+  .horizontal-line-text {
+    width: 60px; /* Adjusted width for smaller screens */
+    margin-left: auto; /* Center horizontally for smaller screens */
+    margin-right: auto; /* Center horizontally for smaller screens */
+  }
+}
+
+.horizontal-line-text1 {
+  height: 1px;
+  background-color: #fff;
+  margin:-14px auto;
+  border: none;
+  margin-left: 3px;
+  width: 50px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .horizontal-line-text1 {
+    width: 30px; /* Adjusted width for smaller screens */
+    margin: -8px auto; /* Adjusted margin for smaller screens */
+  }
+}
+.text p{
+  margin-right: 734px;
+  margin-top: 50px;
+  font-size: 22px;
+  color: #c3c3c3;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .text p {
+    margin-right: 20px; /* Adjusted margin for smaller screens */
+    margin-top: 20px; /* Adjusted margin for smaller screens */
+    font-size: 18px; /* Adjusted font size for smaller screens */
+  }
+}
+
+.down img {
+  margin-top: 72px;
+  margin-right: 1180px;
+  position: relative;
+  animation: jump 0.5s ease infinite; /* Apply the animation */
+}
+@keyframes jump {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-50px); /* Jump up */
+  }
+  100% {
+    transform: translateY(0); /* Back to initial position */
+  }
+}
+
+.down p{
+  margin-top: -57px;
+  margin-left: 52px;
+  font-size: 12px;
+  color:rgb(255, 255, 255);
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .down p {
+    margin-top: -30px; /* Adjust as needed for smaller screens */
+    margin-left: 20px; /* Adjust as needed for smaller screens */
+    font-size: 10px; /* Adjust as needed for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .down p {
+    margin-top: -20px; /* Adjust as needed for even smaller screens */
+    margin-left: 10px; /* Adjust as needed for even smaller screens */
+    font-size: 8px; /* Adjust as needed for even smaller screens */
+  }
+}
+.phone img {
+  width: 334px;
+  height: 510px;
+  font-family: 'helvetica', 'arial', 'sans serif';
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 238px;
+  margin-top: -414px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .phone{
+    margin-top: 10px;
+  }
+  
+}
+
+
+
+  /* Style for the container */
+  .container3 {
+      margin-top: 159px; /* Adjust margin as needed */
+      background-color: #fff;
+      height: 450vh; /* Set height to 100% of viewport height */
+      width: 100%; /* Set width to 100% */
+  }
+  @media (max-width: 768px) {
+    .container3 {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+  /* Style for the section */
+  .second {
+      padding: 50px 0; /* Add padding to the section */
+  }
+  @media (max-width: 768px) {
+    .second {
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+  /* Style for the section headings */
+  .second h3 {
+      font-size: 24px;
+      color: #279b03;
+      margin-bottom: 1px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .second h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .second h1 {
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 30px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .second h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+        margin-bottom: 20px; /* Adjust margin for smaller screens */
+    }
+}
+
+  
+  /* Style for the horizontal lines */
+  .horizontal-line3{
+      height: 1px;
+      background-color: #279b03;
+      margin: 20px auto;
+      border: none;
+      margin-left: 636px;
+      width: 50px;
+      text-align: center;
+      position: relative;
+  
+  }
+  .horizontal-line4 {
+      height: 1px;
+      background-color: #279b03;
+      margin:-14px auto;
+      border: none;
+      margin-left: 642px;
+      width: 34px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .horizontal-line3,
+    .horizontal-line4 {
+        margin-left: 10px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  
+  /* Style for the paragraph */
+  .second p {
+      font-size: 18px;
+      color: #666;
+      line-height: 1.6;
+      margin-top: 47px;
+      position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .second p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+    }
+}
+  /* Style for the container */
+  .container4 {
+      margin-top: 100px; /* Adjust margin as needed */
+      background-color: #fff;
+  }
+  @media (max-width: 768px) {
+    .container4 {
+        margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+}
+
+  
+  /* Style for the section */
+  .third {
+      padding: 50px 0; /* Add padding to the section */
+      background-color: #fff;
+  
+  }
+  @media (max-width: 768px) {
+    .third {
+        padding: 30px 0; /* Adjust padding for smaller screens */
+    }
+}
+
+  /* Style for the section headings */
+  .third h3 {
+      font-size: 24px;
+      color: #279b03;
+      margin-bottom: 20px;
+      margin-right: 970px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .third h3 {
+        margin-right: 10px; /* Adjust margin-right for smaller screens */
+    }
+}
+
+  
+  .third h1 {
+      font-size: 36px;
+      color: #000;
+      margin-bottom: 30px;
+      margin-right: 747px;
+      position: relative;
+      
+  }
+  @media (max-width: 768px) {
+    .third h1 {
+        margin-right: 10px; /* Adjust margin-right for smaller screens */
+    }
+}
+
+  
+  /* Style for the horizontal lines */
+  .horizontal-line5{
+      height: 1px;
+      background-color: #279b03;
+      margin: 20px auto;
+      border: none;
+      margin-right: 1213px;
+      width: 53px;
+      position: relative;
+  
+  
+  }
+  .horizontal-line6 {
+      height: 1px;
+      background-color: #279b03;
+      margin: -11px auto;
+      border: none;
+      margin-right: 1232px;
+      width: 34px;
+      position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .horizontal-line5,
+    .horizontal-line6 {
+        margin-right: 10px; /* Adjust margin-right for smaller screens */
+    }
+}
+
+
+  .imgh1 {
+        margin-right: 50px;
+        margin-left: 82px;
+        padding: 20px;
+        position: relative;
+  
+      }
+      @media (max-width: 768px) {
+        .imgh1 {
+            margin-right: 20px; /* Adjust margin-right for smaller screens */
+            margin-left: 20px; /* Adjust margin-left for smaller screens */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+    }
+    
+  .imgh2 {
+        margin-right: 50px;
+        margin-left: 82px;
+        padding: 20px;
+        position: relative;
+  
+      }
+      @media (max-width: 768px) {
+        .imgh2 {
+            margin-right: 20px; /* Adjust margin-right for smaller screens */
+            margin-left: 20px; /* Adjust margin-left for smaller screens */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+    }
+    
+  
+  .imgh3 {
+        margin-right: 50px;
+        margin-left: 82px;
+        padding: 20px;
+        position: relative;
+  
+      }
+      @media (max-width: 768px) {
+        .imgh3 {
+            margin-right: 20px; /* Adjust margin-right for smaller screens */
+            margin-left: 20px; /* Adjust margin-left for smaller screens */
+            padding: 10px; /* Adjust padding for smaller screens */
+        }
+    }
+       
+  .container5 h1{
+    margin-left: 238px;
+    margin-top: -100px;
+    font-size: 24px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .container5 h1 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -50px; /* Adjust margin-top for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+  .container5 p{
+    margin-left: 238px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .container5 p {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  .container6 h1{
+    margin-left: 238px;
+    margin-top: -100px;
+    font-size: 24px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .container6 h1 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -50px; /* Adjust margin-top for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+  .container6 p{
+    margin-left: 238px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .container6 p {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  .container7 h1{
+    margin-left: 238px;
+    margin-top: -100px;
+    font-size: 24px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .container7 h1 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -50px; /* Adjust margin-top for smaller screens */
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .container7 p{
+    margin-left: 238px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+  }
+  
+  @media (max-width: 768px) {
+    .container7 p {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+  
+  .imgh4{
+    font-family: 'helvetica', 'arial', 'sans serif';
+    font-size: 14px;
+    margin-left: 606px;
+    margin-top: -489px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .imgh4 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -200px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .part3 h3{
+    font-size: 26px;
+    color: #17a526;
+    text-align: center;
+    padding: 170px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .part3 h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+}
+  .part3 h1{
+    font-size: 48px;
+    color:#222;
+    text-align: center;
+    margin-top: -154px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .part3 h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        margin-top: -100px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  /* Style for the horizontal lines */
+  .horizontal-line-part1{
+      height: 1px;
+      background-color: #279b03;
+      margin: 20px auto;
+      border: none;
+      margin-left: 636px;
+      width: 50px;
+      text-align: center;
+      position: relative;
+  
+  }
+  .horizontal-line-part2 {
+      height: 1px;
+      background-color: #279b03;
+      margin:-14px auto;
+      border: none;
+      margin-left: 642px;
+      width: 34px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .horizontal-line-part1,
+    .horizontal-line-part2 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .img4{
+    font-size: 14px;
+    margin-left: 390px;
+    margin-top: 219px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img4 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  .part4 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -59px;
+    margin-left: 140px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part4 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -30px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .part4 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 141px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part4 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .img5{
+    font-size: 14px;
+    margin-left: 390px;
+    margin-top: 55px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img5 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+
+  
+  .part5 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -59px;
+    margin-left: 140px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part5 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -30px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .part5 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 141px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part5 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  
+  .img6{
+    font-size: 14px;
+    margin-left: 390px;
+    margin-top: 55px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img6 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .part6 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -59px;
+    margin-left: 140px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part6 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -30px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .part6 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 141px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part6 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  
+  
+  
+  .img7{
+    font-size: 14px;
+    margin-left: 915px;
+    margin-top: -869px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img7 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -300px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  
+  .part7 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -469px;
+    margin-left: 1030px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part7 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -200px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+
+  .part7 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 1033px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part7 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+
+  
+  .img8{
+    font-size: 14px;
+    margin-left: 915px;
+    margin-top: -564px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img8 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -200px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .part8 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -310px;
+    margin-left: 1030px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part8 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -150px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .part8 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 1033px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part8 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+
+  .img9{
+    font-size: 14px;
+    margin-left: 915px;
+    margin-top: -250px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .img9 {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -100px; /* Adjust margin-top for smaller screens */
+        font-size: 12px; /* Adjust font size for smaller screens */
+    }
+}
+
+  
+  .part9 h1{
+    font-size: 24px;
+    color: #222;
+    margin-top: -158px;
+    margin-left: 1030px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part9 h1 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .part9 p{
+    font-size: 14px;
+    color: #222;
+    margin-top: 14px;
+    margin-left: 1033px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .part9 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  
+  .phone-img{
+    margin-top: -648px;
+    margin-left: 516px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .phone-img {
+        margin-top: -300px; /* Adjust margin-top for smaller screens */
+        margin-left: 50%; /* Center the image horizontally */
+        transform: translateX(-50%); /* Center the image horizontally */
+    }
+}
+
+  .container11 h3{
+    font-size: 26px;
+    padding: 125px;
+    color: #279b03;
+    text-align: center;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .container11 h3 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        padding: 50px; /* Adjust padding for smaller screens */
+    }
+}
+
+  .container11 h1{
+    font-size: 48px;
+    color: #222;
+    text-align: center;
+    margin-top: -127px;
+    position: relative;
+  }
+  @media (max-width: 768px) {
+    .container11 h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .horizontal-line11{
+      height: 1px;
+      background-color: #279b03;
+      margin: 20px auto;
+      border: none;
+      margin-left: 636px;
+      width: 50px;
+      text-align: center;
+      position: relative;
+  
+  }
+  .horizontal-line12{
+      height: 1px;
+      background-color: #279b03;
+      margin:-14px auto;
+      border: none;
+      margin-left: 642px;
+      width: 34px;
+      position: relative;
+  }
+  @media (max-width: 768px) {
+    .horizontal-line11 {
+        margin-left: 50%; /* Center the line horizontally */
+        transform: translateX(-50%); /* Center the line horizontally */
+        width: 30px; /* Adjust width for smaller screens */
+    }
+
+    .horizontal-line12 {
+        margin-left: 50%; /* Center the line horizontally */
+        transform: translateX(-50%); /* Center the line horizontally */
+        width: 20px; /* Adjust width for smaller screens */
+    }
+}
+
+  
+  .feature-1{
+    margin-top: 107px;
+    margin-left: 127px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-1 {
+        margin-top: 50px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .feature h1{
+    font-size: 24px;
+    margin-left: 243px;
+    margin-top: -68px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -40px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+  .feature p{
+    font-size: 14px;
+    margin-left: 243px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature-2{
+    margin-top: -190px;
+    margin-left: 522px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-2 {
+        margin-top: -100px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+
+  .feature2 h1{
+    font-size: 24px;
+    margin-left: 639px;
+    margin-top: -135px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature2 h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature2 p{
+    font-size: 14px;
+    margin-left: 640px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature2 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  
+  .feature-3{
+    margin-top: -222px;
+    margin-left: 928px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-3 {
+        margin-top: -120px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .feature3 h1{
+    font-size: 24px;
+    margin-left: 1060px;
+    margin-top: -151px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature3 h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature3 p{
+    font-size: 14px;
+    margin-left: 1062px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature3 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature-4{
+    margin-top: 22px;
+    margin-left: 128px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-4 {
+        margin-top: 10px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .feature4 h1{
+    font-size: 24px;
+    margin-left: 240px;
+    margin-top: -65px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature4 h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -40px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature4 p{
+    font-size: 14px;
+    margin-left: 241px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature4 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+  .feature-5{
+    margin-top: -198px;
+    margin-left: 523px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-5 {
+        margin-top: -100px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .feature5 h1{
+    font-size: 24px;
+    margin-left: 643px;
+    margin-top: -136px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature5 h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+  .feature5 p{
+    font-size: 14px;
+    margin-left: 645px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature5 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+  .feature-6{
+    margin-top: -229px;
+    margin-left: 931px;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature-6 {
+        margin-top: -120px; /* Adjust margin-top for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+
+  .feature6 h1{
+    font-size: 24px;
+    margin-left: 1064px;
+    margin-top: -152px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature6 h1 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: -80px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+  .feature6 p{
+    font-size: 14px;
+    margin-left: 1064px;
+    margin-top: 25px;
+    color: #222;
+    position: relative;
+  
+  }
+  @media (max-width: 768px) {
+    .feature6 p {
+        font-size: 12px; /* Adjust font size for smaller screens */
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+        margin-top: 15px; /* Adjust margin-top for smaller screens */
+    }
+}
+
+
+  .ipad{
+    text-align: center;
+    margin-left: 160px;
+  }
+  @media (max-width: 768px) {
+    .ipad {
+        margin-left: 20px; /* Adjust margin-left for smaller screens */
+    }
+}
+.bar{
+  background-color: #222;
+}
+
+.b1 img{
+  margin-top: 50px;
+  margin-left: 233px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b1 img {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+  }
+}
+
+.b1 h1{
+  margin-top: 32px;
+  margin-left: 198px;
+  font-size: 72px;
+  position: relative;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .b1 h1 {
+    margin-top: 20px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b1 p{
+  margin-top: 13px;
+  margin-left: 214px;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b1 p {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 1.5vw; /* Adjust font size based on viewport width */
+  }
+}
+
+.b2 img{
+  margin-top: -441px;
+  margin-left: 515px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b2 img {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+  }
+}
+.b2 h1{
+  margin-top: -167px;
+  margin-left: 478px;
+  font-size: 72px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b2 h1 {
+    margin-top: 20px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b2 p{
+  margin-top: 13px;
+  margin-left: 481px;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b2 p {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 1.5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b3 img{
+  margin-top: -471px;
+  margin-left: 796px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b3 img {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+  }
+}
+.b3 h1{
+  margin-top: -186px;
+  margin-left: 761px;
+  font-size: 72px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b3 h1 {
+    margin-top: 20px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b3 p{
+  margin-top: 13px;
+  margin-left: 806px;
+  color: #000;
+  font-size: 18px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b3 p {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 1.5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b4 img{
+  margin-top: -506px;
+  margin-left: 1068px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b4 img {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+  }
+}
+.b4 h1{
+  margin-top: -204px;
+  margin-left: 1037px;
+  font-size: 72px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b4 h1 {
+    margin-top: 20px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 5vw; /* Adjust font size based on viewport width */
+  }
+}
+.b4 p{
+  margin-top: 10px;
+  margin-left: 1046px;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .b4 p {
+    margin-top: 10px; /* Adjust as needed for smaller screens */
+    margin-left: 10%; /* Adjust as needed for smaller screens */
+    font-size: 1.5vw; /* Adjust font size based on viewport width */
+  }
+}
+.o1 h3{
+  margin-top: 50px;
+  margin-left: 587px;
+  font-size: 26px;
+  color: green;
+  position: relative;
+}
+.o1 h1{
+  margin-top: 2;
+  margin-left: 531px;
+  font-size: 48px;
+  color: #000;
+  position: relative;
+}

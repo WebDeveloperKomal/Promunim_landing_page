@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Animated Navbar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="animated-nav">
+  <div class="logo">
+    <img src="logo.png" alt="Logo">
+  </div>
+  <ul class="nav-links">
+    <li><a href="#Home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li class="search-icon" onclick="openSearchPopup()"><button>Search</button></li>
+    <div id="searchPopup" class="search-popup">
+      <div class="search-content">
+        <span class="close" onclick="closeSearchPopup()">&times;</span>
+        <input type="text" placeholder="Search...">
+        <button onclick="submitSearch()">Submit</button>
+      </div>
+    </div>
+  </ul>
+</nav>
+<div class="About US" id="about">
+  <video autoplay muted loop id="background-video">
+    <source src="data_encrypting (Original).mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="logo">
+    <img src="logo.png" alt="logo">
+  </div>
+  <h3>About Our Company</h3>
+  <h1>TheTrusted Leading IT Service <bold>Company</bold>
+  </h1>
+  <p>At IBG Infotech, we go beyond expectations. We don't just keep your IT running smoothly; we proactively optimize and streamline your systems to ensure uninterrupted operations.
+  </p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
