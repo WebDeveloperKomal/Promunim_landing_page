@@ -213,7 +213,7 @@
 }
 
 .down img {
-  margin-top: 72px;
+  margin-top: 42px;
   margin-right: 1180px;
   position: relative;
   animation: jump 0.5s ease infinite; /* Apply the animation */
@@ -259,7 +259,7 @@
   font-size: 14px;
   line-height: 17px;
   margin-left: 238px;
-  margin-top: -414px;
+  margin-top: -490px;
   position: relative;
 }
 @media (max-width: 768px) {
